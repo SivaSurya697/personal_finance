@@ -1,6 +1,11 @@
 from __future__ import annotations
 
 from pathlib import Path
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 import polars as pl
 import streamlit as st
@@ -11,9 +16,9 @@ from finance_core.storage.db import FinanceDB
 
 st.set_page_config(page_title="Personal Finance Dashboard", layout="wide")
 
-DB_PATH = Path("data/db/finance.duckdb")
-RULES_DIR = Path("rules")
-UPLOADS = Path("data/uploads")
+DB_PATH = PROJECT_ROOT / "data/db/finance.duckdb"
+RULES_DIR = PROJECT_ROOT / "rules"
+UPLOADS = PROJECT_ROOT / "data/uploads"
 UPLOADS.mkdir(parents=True, exist_ok=True)
 
 
