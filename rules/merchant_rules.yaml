@@ -1,0 +1,17 @@
+rules:
+  - pattern: OPENAI
+    merchant_clean: OPENAI
+    merchant_group: SaaS
+    category: Subscriptions
+  - pattern: APPLE MEDIA SERVICES
+    merchant_clean: APPLE
+    merchant_group: Entertainment
+    category: Subscriptions
+  - pattern: SHELL
+    merchant_clean: SHELL
+    merchant_group: Fuel
+    category: Fuel
+  - pattern: KFC
+    merchant_clean: KFC
+    merchant_group: QSR
+    category: Food
