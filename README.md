@@ -14,6 +14,22 @@ Streamlit + DuckDB app for ingesting debit/bank and credit card statements into 
 - Expense vs cashflow analytics views.
 - Data quality page supports transaction-level override edits and recomputation.
 
+## Environment setup (venv + dependencies)
+
+### Option A: One-command setup script
+```bash
+bash scripts/install_deps.sh
+source .venv/bin/activate
+```
+
+### Option B: Manual setup
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+
 ## Run
 ```bash
 python make_demo_data.py
