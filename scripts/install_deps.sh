@@ -21,7 +21,4 @@ python -m pip install --upgrade pip setuptools wheel
 echo "Installing project dependencies from requirements.txt"
 pip install -r requirements.txt
 
-echo "Installing local project package in editable mode"
-pip install -e . --no-build-isolation
-
 echo "Done. Activate with: source $VENV_DIR/bin/activate"

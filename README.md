@@ -20,7 +20,6 @@ Streamlit + DuckDB app for ingesting debit/bank and credit card statements into 
 ```bash
 bash scripts/install_deps.sh
 source .venv/bin/activate
-python -c "import finance_core; print('finance_core import OK')"
 ```
 
 ### Option B: Manual setup
@@ -29,16 +28,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
-pip install -e . --no-build-isolation
-```
-
-
-### If you see `ModuleNotFoundError: No module named finance_core`
-Run from the project root and ensure editable install is done in the active venv:
-```bash
-source .venv/bin/activate
-pip install -e . --no-build-isolation
-python -c "import finance_core; print('finance_core import OK')"
 ```
 
 ## Run
