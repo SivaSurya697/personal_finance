@@ -1,0 +1,25 @@
+dedupe:
+  near_date_window_days: 2
+transfer:
+  amount_tolerance: 5
+  date_window_days: 1
+circular:
+  window_days: 14
+keywords:
+  transfer:
+    - TRANSFER
+    - IMPS
+    - NEFT
+    - UPI TO SELF
+  cc_payment:
+    - CREDIT CARD
+    - CARD PAYMENT
+    - CC PAYMENT
+    - CARD BILL
+  refund:
+    - REFUND
+    - REVERSAL
+budgets:
+  Food: 12000
+  Subscriptions: 3000
+  Fuel: 5000
